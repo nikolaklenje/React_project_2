@@ -1,17 +1,17 @@
 
-export default function Card(){
+export default function Card(props){
     return(
         <div className="Card">
            <div className="CardElements">
-             <div>
-                <img className= "CardImage" src="https://mmimageservice.azurewebsites.net/api/image/office/039" alt=""></img> </div>
+             
+                <img className= "CardImage" src={props.imageUrl} alt=""></img>
              <div className="Info">
                    <div className="InfoHeader">
-                    <img className="PinImage"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ZNHx99BPvlq_XyaWI7S8j0RZDPfE7JXEZQ&usqp=CAU" alt=""></img><p>Japan</p> <a href="https://www.google.com/maps">View on google maps</a>
+                    <img className="PinImage"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ZNHx99BPvlq_XyaWI7S8j0RZDPfE7JXEZQ&usqp=CAU" alt=""></img><p>{props.location}</p> <a href={props.googleMapsUrl}>View on google maps</a>
                    </div>
                    <div className="InfoText">
-                      <h1>Mount Fuji</h1>
-                      <p><b>12 Jan,2021 - 20 Jan, 2022</b></p>
+                      <h1>{props.title}</h1>
+                      <p><b>{props.startDate} - {props.endDate}</b></p>
                       <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                       incididunt ut labore et dolore magna aliqua.

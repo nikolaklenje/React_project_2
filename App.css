@@ -4,6 +4,10 @@
   justify-content: center;
   background-color: #F55A5A;
 }
+.Info{
+  padding-left: 20px;
+  
+}
 .InfoHeader{
   display:flex;
   align-items:center;
@@ -14,16 +18,19 @@
   color:white;
   padding-left: 1%;
 }
+.Card{
+  padding: 10%;;
+}
 .CardElements{
   display:flex;
   align-items: center;
   justify-content: center;
 }
 .CardImage{
-  width: 125px;
-height: 168px;
-left: 40px;
-top: 100px;
+  width: 130px;
+height: 260px;
+
+
 }
 
 .PinImage{
@@ -33,6 +40,7 @@ top: 100px;
 .Globe{
   width:30px;
   height:30px;
+  border-radius: 15px;;
 }
 
 .App-logo {
